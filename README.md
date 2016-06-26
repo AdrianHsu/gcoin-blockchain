@@ -1,3 +1,3 @@
-# My Awesome Book
+# gcoin-blockchain
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+哈囉，我是Adrian，今年就讀於台大電機系二年級。 這本書將整理我自己在Gcoin學習區塊鏈的心得，以及我對未來發展所發想的創意點子。
