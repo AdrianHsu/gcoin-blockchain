@@ -85,7 +85,12 @@ Google提供的database，用於Bitcoin Core客戶端。
 若遇上奇數個leaves，則最後一個transaction節點複製一份、以構成偶數。
 ```
 
-
+## 簡單支付驗證 SPV 
+SPV allows a lightweight client to verify that a transaction is included in the Bitcoin blockchain, without downloading the entire blockchain. The SPV client only needs download the block headers, which are much smaller than the full blocks. To verify that a transaction is in a block, a SPV client requests a proof of inclusion, in the form of a Merkle branch.
+	
+	1. 讓client檢驗一筆交易是否在區塊鏈中的技術。
+	2. 
+	
 
 # 二、共識Algorithm
 
