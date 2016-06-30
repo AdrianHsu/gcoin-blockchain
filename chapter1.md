@@ -2,11 +2,12 @@
 
 # 一、與比特幣的關係
 
+
+## Bitcoin's Blockchain
+
 > The Times 03 / Jan / 2009 Chancellor on brink of second bailout for banks.
   
 > --- "The Times"
-
-## Bitcoin's Blockchain
 
 #### Blockchain
 ```
