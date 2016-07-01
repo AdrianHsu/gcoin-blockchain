@@ -21,7 +21,7 @@
 ## Txout
 
 ### Spending conditions (Encumbrances)
-	1. 大部分 Wallet Aoos 有自己的小database of UTXO, 而這些 UTXO 被locked(encumber)、利用wallets 自己的key.
+	1. 大部分 Wallet Apps 有自己的小database of UTXO, 而這些 UTXO 被locked(encumber)、利用wallets 自己的key.
 	2. 收錢者的wallet，會包含a copy of Txout from 給錢者的Tx
 	3. Txout assigns a new owner to the coin value, 透過將一個key與owner連結起來。
 	4. 這個destination key 就是encumbrance
@@ -58,4 +58,4 @@
 
 ## Data Output(OP_RETURN)
 
-## P2SH
+## P2SHg
