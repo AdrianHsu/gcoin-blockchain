@@ -8,11 +8,11 @@
 
 ## Tx 生命週期
 
-## Tx 生成
+### Tx 生成
 
-## Broadcast Tx 到 Bitcoin 網路
+### Broadcast Tx 到 Bitcoin 網路
 
-## 傳遞 Tx on Bitcoin 雵路
+### 傳遞 Tx on Bitcoin 網路
 
 ## Tx 的結構
 
@@ -58,4 +58,4 @@
 
 ## Data Output(OP_RETURN)
 
-## P2SHg
+## P2SH
