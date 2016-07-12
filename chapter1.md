@@ -25,6 +25,8 @@
 Google提供的database，用於Bitcoin Core客戶端。
 ```
 
+
+
 ####SHA256
 ```
 在每個區塊上加密hash生成hash值。hash值中包含父區塊hash區段，
@@ -174,8 +176,14 @@ Google提供的database，用於Bitcoin Core客戶端。
 ## DAO 分佈式自治組織
 
 	1. Decentralized Autonomous Organization
-	2. 一個公司的產品, 以Ethereum為技術基礎 
+	2. 開放式的創投基金會
 	3. 專門跑encoding smart contracts。
+	4. 以Ethereum搭建
+	5. 將會投資使用blockchain技術的各種share eco. 產品。
+	6. DAO不是人力管理，而是程式碼自動執行，像是大型綜合的智慧合約。
+	7. 投資者以虛擬貨幣「以太幣（ETH）」交換稱為「DAO token」的公司股份
+	8. 跟比特幣一樣，所有交易皆被公開在網站上（如以太坊）供瀏覽。
+	9. The DAO就像其他的傳統創投基金，以營利為導向
 
 # 四、分佈式帳本
 
