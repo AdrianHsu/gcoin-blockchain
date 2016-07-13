@@ -7,10 +7,10 @@
 
 ## 效果  
 > 創造一type為MERGE的transaction  
-> 其input為wallet中所有target address為addressA且color為colorB的utxo  
-> output value為1.中總和  
-> output address為addressA, color為colorB  
-> 需收取1COIN的color 1當作手續費  
+> 1. 其input為wallet中所有target address為addressA且color為colorB的utxo  
+> 2. output value為1.中總和  
+> 3. output address為addressA, color為colorB  
+> 4. 需收取1COIN的color 1當作手續費  
 > 並將其送進memerypool中並收進block
 
 ## 相關檔案
