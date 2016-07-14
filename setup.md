@@ -15,5 +15,12 @@ Place a configuration file in `~/.gcoin/gcoin.conf` with the following contents 
      addnode=54.254.159.145
      rpcuser=username
      rpcpassword=password
+
+## Env
+in `.bashrc`
+
+	 export LD_LIBRARY_PATH=/usr/local/ssl/lib
+	 export LDFLAGS=-L/usr/local/ssl/lib
+	 export CFLAGS=-I/usr/local/ssl/include
      
 ## DONE
