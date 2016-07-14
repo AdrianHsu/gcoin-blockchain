@@ -1,3 +1,11 @@
+## TODO
+參照hw1
+
+## Transaction 概覽
+![img](img/hw1.jpg)
+
+## Commands
+
 `$ ./gcoin-cli setgenerate true`
 	
 	true
@@ -20,38 +28,6 @@
 `$ ./gcoin-cli mint 1 0`
 
 	e9c922e212ee891a3018906b500bca9b2b3ef6d01def57441732240ad3e9cc8d
-`$ ./gcoin-cli getinfo`
-
-	{
-	    "version" : 1010200,
-	    "protocolversion" : 70002,
-	    "walletversion" : 60000,
-	    "blocks" : 1,
-	    "timeoffset" : 0,
-	    "connections" : 1,
-	    "proxy" : "",
-	    "difficulty" : 0.00024414,
-	    "testnet" : false,
-	    "keypoololdest" : 1468473323,
-	    "keystoresize" : 1,
-	    "errors" : ""
-	}
-`$ ./gcoin-cli getinfo`
-
-	{
-	    "version" : 1010200,
-	    "protocolversion" : 70002,
-	    "walletversion" : 60000,
-	    "blocks" : 8,
-	    "timeoffset" : 0,
-	    "connections" : 1,
-	    "proxy" : "",
-	    "difficulty" : 0.00024414,
-	    "testnet" : false,
-	    "keypoololdest" : 1468473324,
-	    "keystoresize" : 1,
-	    "errors" : ""
-	}
 `$ ./gcoin-cli getinfo`
 
 	{
@@ -108,60 +84,9 @@
 	    "time" : 1468473324,
 	    "blocktime" : 1468473324
 	}
-`$ ./gcoin-cli getaddressbalance 1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx`
-
-	{
-  	  "0" : 1.00000000
-	}
-`$ ./gcoin-cli getinfo`
-
-	{
-	    "version" : 1010200,
-	    "protocolversion" : 70002,
-	    "walletversion" : 60000,
-	    "blocks" : 12,
-	    "timeoffset" : 0,
-	    "connections" : 1,
-	    "proxy" : "",
-	    "difficulty" : 0.00024414,
-	    "testnet" : false,
-	    "keypoololdest" : 1468473459,
-	    "keystoresize" : 1,
-	    "errors" : ""
-	}
 `$ ./gcoin-cli mint 1 0`
 
 	adfbaab95065156d8263bf786d264538f100c3c773e72519de6221252031bcb8
-`$ ./gcoin-cli getaddressbalance 1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx`
-
-	{
-  	  "0" : 2.00000000
-	}
-`$ ./gcoin-cli mint 100 1`
-	
-	error: {"code":-4,"message":"license of this color hasn't been generated yet"}
-`$ ./gcoin-cli listwalletaddress`
-
-	[
-  	  "1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx"
-	]
-`$ ./gcoin-cli getinfo`
-
-
-	{
-	    "version" : 1010200,
-	    "protocolversion" : 70002,
-	    "walletversion" : 60000,
-	    "blocks" : 23,
-	    "timeoffset" : 0,
-	    "connections" : 1,
-	    "proxy" : "",
-	    "difficulty" : 0.00024414,
-	    "testnet" : false,
-	    "keypoololdest" : 1468473653,
-	    "keystoresize" : 1,
-	    "errors" : ""
-	}
 `$ ./gcoin-cli getrawtransaction adfbaab95065156d8263bf786d264538f100c3c773e72519de6221252031bcb8 1`
 
 	{
@@ -201,6 +126,28 @@
 	    "confirmations" : 66,
 	    "time" : 1468473475,
 	    "blocktime" : 1468473475
+	}
+`$ ./gcoin-cli listwalletaddress`
+
+	[
+  	  "1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx"
+	]
+`$ ./gcoin-cli getinfo`
+
+
+	{
+	    "version" : 1010200,
+	    "protocolversion" : 70002,
+	    "walletversion" : 60000,
+	    "blocks" : 23,
+	    "timeoffset" : 0,
+	    "connections" : 1,
+	    "proxy" : "",
+	    "difficulty" : 0.00024414,
+	    "testnet" : false,
+	    "keypoololdest" : 1468473653,
+	    "keystoresize" : 1,
+	    "errors" : ""
 	}
 > 1代表生成 1 支key  
 
@@ -282,11 +229,6 @@
 	    "time" : 1468473723,
 	    "blocktime" : 1468473723
 	}
-`$ ./gcoin-cli getaddressbalance 1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx`
-
-	{
-	    "0" : 1.00000000
-	}
 `$ ./gcoin-cli getlicenseinfo 1`
 
 	{
@@ -359,20 +301,11 @@
 
 	14057cdaf79953afe7e02233cc6d0966196a44a91e60e503a20a9dffe36f328a
 
-`$ ./gcoin-cli getaddressbalance 1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx`
 
-	{
-	    "1" : 100.00000000
-	}
 `$ ./gcoin-cli mint 100 2`
 	
 	ff7ceb320c19a7808f1638d84578d2838bc15c4a98385332314090a652eeae21
-`$ ./gcoin-cli getaddressbalance 1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx`
 
-	{
-	    "1" : 100.00000000
-	}
-	
 `$ ./gcoin-cli getaddressbalance 1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx`
 
 	{
@@ -424,46 +357,6 @@
 	{
 	    "1" : 100.00000000,
 	    "2" : 100.00000000
-	}
-`$ ./gcoin-cli getrawtransaction ff7ceb320c19a7808f1638d84578d2838bc15c4a98385332314090a652eeae21 1`
-
-	{
-	    "hex" : "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff6a473044022018bf2ba6731a685f70f97a9e541fc50adcb682da782647d52b9a33cfeac5761e022006bae3ed981fe8789275e1ff08aa91cc74f0787fe0a7ae59606223badcc1ac2e012102247c39fd5b694a8da4b22708de5190d183852ed470388b77613ec7be2e811c0bffffffff0100e40b54020000001976a9148a6343b0603c3f5b16e812b27f833d591d868ed288ac020000000000000001000000",
-	    "txid" : "ff7ceb320c19a7808f1638d84578d2838bc15c4a98385332314090a652eeae21",
-	    "version" : 1,
-	    "locktime" : 0,
-	    "type" : "MINT",
-	    "size" : 199,
-	    "vin" : [
-	        {
-	            "coinbase" : "473044022018bf2ba6731a685f70f97a9e541fc50adcb682da782647d52b9a33cfeac5761e022006bae3ed981fe8789275e1ff08aa91cc74f0787fe0a7ae59606223badcc1ac2e012102247c39fd5b694a8da4b22708de5190d183852ed470388b77613ec7be2e811c0b",
-	            "scriptSig" : {
-	                "asm" : "3044022018bf2ba6731a685f70f97a9e541fc50adcb682da782647d52b9a33cfeac5761e022006bae3ed981fe8789275e1ff08aa91cc74f0787fe0a7ae59606223badcc1ac2e01 02247c39fd5b694a8da4b22708de5190d183852ed470388b77613ec7be2e811c0b",
-	                "hex" : "473044022018bf2ba6731a685f70f97a9e541fc50adcb682da782647d52b9a33cfeac5761e022006bae3ed981fe8789275e1ff08aa91cc74f0787fe0a7ae59606223badcc1ac2e012102247c39fd5b694a8da4b22708de5190d183852ed470388b77613ec7be2e811c0b"
-	            },
-	            "sequence" : 4294967295
-	        }
-	    ],
-	    "vout" : [
-	        {
-	            "value" : 10000000000,
-	            "n" : 0,
-	            "scriptPubKey" : {
-	                "asm" : "OP_DUP OP_HASH160 8a6343b0603c3f5b16e812b27f833d591d868ed2 OP_EQUALVERIFY OP_CHECKSIG",
-	                "hex" : "76a9148a6343b0603c3f5b16e812b27f833d591d868ed288ac",
-	                "reqSigs" : 1,
-	                "type" : "pubkeyhash",
-	                "addresses" : [
-	                    "1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx"
-	                ]
-	            },
-	            "color" : 2
-	        }
-	    ],
-	    "blockhash" : "0000059954e98161f4b75e2a5b8ec09364485a6b7ec46d7b87b66f7ca632e16c",
-	    "confirmations" : 11,
-	    "time" : 1468474086,
-	    "blocktime" : 1468474086
 	}
 `$ ./gcoin-cli sendtoaddress 1DcjAV7be3L4d7ss2grDRaPWi2P6GcZTjx 40 2`
 
