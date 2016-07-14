@@ -55,7 +55,7 @@
 	$gcoin-cli mergetx addressA 2 // wallet中所有target address為addressA，且color為2的utxo，其總和為output 的value，記得扣掉fee
 	            (吐回txhash : hashA)
 	
-	$gcoin-cli getrawtransaction hashA 1
+	$gcoin-cli getrawtransaction hashA 1 // 1代表要decode，否則看不懂
 	
 	
 	
