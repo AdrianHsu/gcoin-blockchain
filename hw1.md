@@ -57,7 +57,9 @@
 	
 	$gcoin-cli getrawtransaction hashA 1 // 1代表要decode，否則看不懂
 	
-	
+	$gcoin-cli stop
+
+
 	
 	
 	

@@ -439,3 +439,68 @@
 	    "time" : 1468474476,
 	    "blocktime" : 1468474476
 	}
+	
+---
+
+## 結果
+> 註：txin, address和前面無關，database已重置。
+
+`$ ./gcoin-cli getrawtransaction 7c05386687e8485ce62be44897c7c4d24814ee586d090b888eff3479b9a6eb1e 1`
+
+	{
+	    "hex" : "010000000300c4626d3816947e467b7c82ebd0b7a1df7258b8b0c1a0667bf8c89564722b9d000000006a47304402203a65e46e8259e603006e4d87c0db392c5cfb81904d86b1385d31bd5d6f673c6602200e6718ad8da7ccb70cfc3367765cfa7cade3a0d0e5efd3a644e4c3b5e1fdaf4e0121021adaf97dcd39a410391ba035540614572cac8005fdbbff3a641a4557b4e04a64feffffff00c4626d3816947e467b7c82ebd0b7a1df7258b8b0c1a0667bf8c89564722b9d010000006a47304402207d37f9da1385bc383a159f69bfe946f606eb7be217e31cc88b14e6f88486d2d302203c0512bc9007b3ae47d2a5aacf7b03b11ea3f4998fc61cc8230b8cee31f7d9410121021adaf97dcd39a410391ba035540614572cac8005fdbbff3a641a4557b4e04a64feffffff2a48e9da749556093950a54ed28bb1f183774ff5ec3484411abe8476f7afc2600100000049483045022100f8b29b3983f6b5bf1039ab8fa9b7a07b116f47aa4ba2c52359a06b46b5aabb260220025880eacefc4489cfaebed9c426b33b6c5a3e3ee79f8e71e800d7039b07437701feffffff0100e40b54020000001976a91463c03e39e1357ec8027174c28a21a5bc50fce67588ac020000004400000008000000",
+	    "txid" : "7c05386687e8485ce62be44897c7c4d24814ee586d090b888eff3479b9a6eb1e",
+	    "version" : 1,
+	    "locktime" : 68,
+	    "type" : "MERGE",
+	    "size" : 460,
+	    "vin" : [
+	        {
+	        	//txid 9d2 對應到的是前面範例code的txid 208
+	            "txid" : "9d2b726495c8f87b66a0c1b0b85872dfa1b7d0eb827c7b467e9416386d62c400",
+	            "vout" : 0,
+	            "scriptSig" : {
+	                "asm" : "304402203a65e46e8259e603006e4d87c0db392c5cfb81904d86b1385d31bd5d6f673c6602200e6718ad8da7ccb70cfc3367765cfa7cade3a0d0e5efd3a644e4c3b5e1fdaf4e01 021adaf97dcd39a410391ba035540614572cac8005fdbbff3a641a4557b4e04a64",
+	                "hex" : "47304402203a65e46e8259e603006e4d87c0db392c5cfb81904d86b1385d31bd5d6f673c6602200e6718ad8da7ccb70cfc3367765cfa7cade3a0d0e5efd3a644e4c3b5e1fdaf4e0121021adaf97dcd39a410391ba035540614572cac8005fdbbff3a641a4557b4e04a64"
+	            },
+	            "sequence" : 4294967294
+	        },
+	        {
+	            "txid" : "9d2b726495c8f87b66a0c1b0b85872dfa1b7d0eb827c7b467e9416386d62c400",
+	            "vout" : 1,
+	            "scriptSig" : {
+	                "asm" : "304402207d37f9da1385bc383a159f69bfe946f606eb7be217e31cc88b14e6f88486d2d302203c0512bc9007b3ae47d2a5aacf7b03b11ea3f4998fc61cc8230b8cee31f7d94101 021adaf97dcd39a410391ba035540614572cac8005fdbbff3a641a4557b4e04a64",
+	                "hex" : "47304402207d37f9da1385bc383a159f69bfe946f606eb7be217e31cc88b14e6f88486d2d302203c0512bc9007b3ae47d2a5aacf7b03b11ea3f4998fc61cc8230b8cee31f7d9410121021adaf97dcd39a410391ba035540614572cac8005fdbbff3a641a4557b4e04a64"
+	            },
+	            "sequence" : 4294967294
+	        },
+	        {
+	        	//merge選txid: 60c當vin 所以剛好當fee用掉了不用找錢, 
+	        	//送出的fee會收到color 1的擁有者的wallet（在這個case就是address本身）
+	        	//txid: 60c 是個color=1, value=1btc的NORMAL Tx
+	            "txid" : "60c2aff77684be1a418434ecf54f7783f1b18bd24ea5503909569574dae9482a",
+	            "vout" : 1,
+	            "scriptSig" : {
+	                "asm" : "3045022100f8b29b3983f6b5bf1039ab8fa9b7a07b116f47aa4ba2c52359a06b46b5aabb260220025880eacefc4489cfaebed9c426b33b6c5a3e3ee79f8e71e800d7039b07437701",
+	                "hex" : "483045022100f8b29b3983f6b5bf1039ab8fa9b7a07b116f47aa4ba2c52359a06b46b5aabb260220025880eacefc4489cfaebed9c426b33b6c5a3e3ee79f8e71e800d7039b07437701"
+	            },
+	            "sequence" : 4294967294
+	        }
+	    ],
+	    "vout" : [
+	        {
+	            "value" : 10000000000, // 40 + 60
+	            "n" : 0,
+	            "scriptPubKey" : {
+	                "asm" : "OP_DUP OP_HASH160 63c03e39e1357ec8027174c28a21a5bc50fce675 OP_EQUALVERIFY OP_CHECKSIG",
+	                "hex" : "76a91463c03e39e1357ec8027174c28a21a5bc50fce67588ac",
+	                "reqSigs" : 1,
+	                "type" : "pubkeyhash",
+	                "addresses" : [
+	                    "1A6SCGtWCxwsSYZ4iUEARpQ21VN1rpZCY4"
+	                ]
+	            },
+	            "color" : 2
+	        }
+	    ]
+	}

@@ -1,3 +1,10 @@
+## Ctags  
+
+https://www.youtube.com/watch?v=4f3AENLrdYo
+
+    ctags -R .
+
+
 ## CentOS
 
 	sudo yum install m4 openssl-devel db4-devel libdb-cxx-devel boost-devel protobuf-devel git
